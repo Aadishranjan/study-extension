@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Study Site Timer</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Study Site Timer</h1>
+        <p id="accountLabel"></p>
+      </header>
+
+      <section id="authView" class="view">
+        <div class="tabs" role="tablist" aria-label="Account mode">
+          <button class="tab active" id="loginTab" type="button">Login</button>
+          <button class="tab" id="signupTab" type="button">Sign up</button>
+        </div>
+
+        <form id="authForm">
+          <label>
+            Email
+            <input id="emailInput" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            Password
+            <input id="passwordInput" type="password" autocomplete="current-password" minlength="6" required>
+          </label>
+          <button id="authButton" type="submit">Login</button>
+          <p id="authMessage" class="message" role="status"></p>
+        </form>
+      </section>
+
+      <section id="settingsView" class="view hidden">
+        <form id="settingsForm">
+          <label>
+            Websites to control
+            <textarea id="sitesInput" rows="5" placeholder="youtube.com&#10;instagram.com"></textarea>
+          </label>
+
+          <div class="grid">
+            <label>
+              Daily limit
+              <span class="input-row">
+                <input id="limitInput" type="number" min="1" max="1440" required>
+                <span>min</span>
+              </span>
+            </label>
+            <label>
+              Block time
+              <span class="input-row">
+                <input id="blockInput" type="number" min="1" max="10080" required>
+                <span>min</span>
+              </span>
+            </label>
+          </div>
+
+          <button type="submit">Save settings</button>
+          <p id="settingsMessage" class="message" role="status"></p>
+        </form>
+
+        <section class="usage">
+          <h2>Today</h2>
+          <div id="usageList" class="usage-list"></div>
+        </section>
+
+        <button id="logoutButton" class="secondary" type="button">Logout</button>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

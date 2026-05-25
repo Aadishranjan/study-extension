@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8fafc;
+  color: #111827;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 360px;
+}
+
+.app {
+  padding: 16px;
+}
+
+header {
+  border-bottom: 1px solid #dbe3ef;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#accountLabel {
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+}
+
+.hidden {
+  display: none;
+}
+
+.tabs {
+  background: #e5e7eb;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  margin-bottom: 14px;
+  padding: 4px;
+}
+
+.tab {
+  background: transparent;
+  color: #475569;
+}
+
+.tab.active {
+  background: #ffffff;
+  color: #111827;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  color: #334155;
+  display: grid;
+  font-size: 13px;
+  font-weight: 700;
+  gap: 6px;
+}
+
+input,
+textarea {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #111827;
+  font: inherit;
+  min-width: 0;
+  padding: 9px 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: #2563eb;
+  border: 0;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  min-height: 38px;
+  padding: 9px 12px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button.secondary {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  margin-top: 14px;
+  width: 100%;
+}
+
+button.secondary:hover {
+  background: #f1f5f9;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.input-row {
+  align-items: center;
+  display: grid;
+  gap: 6px;
+  grid-template-columns: 1fr auto;
+}
+
+.input-row span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.message {
+  color: #b45309;
+  font-size: 12px;
+  min-height: 16px;
+}
+
+.message.success {
+  color: #047857;
+}
+
+.usage {
+  border-top: 1px solid #dbe3ef;
+  margin-top: 16px;
+  padding-top: 14px;
+}
+
+.usage-list {
+  display: grid;
+  gap: 8px;
+}
+
+.usage-item {
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.usage-line {
+  align-items: center;
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.usage-site {
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.usage-time {
+  color: #64748b;
+  flex: 0 0 auto;
+  margin-left: 8px;
+}
+
+.progress {
+  background: #e5e7eb;
+  border-radius: 999px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress span {
+  background: #2563eb;
+  display: block;
+  height: 100%;
+  width: 0;
+}
+
+.empty {
+  color: #64748b;
+  font-size: 13px;
+}
