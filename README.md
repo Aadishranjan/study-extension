@@ -1,6 +1,6 @@
-# Study Site Timer Edge Extension
+# Study Site Timer Browser Extension
 
-This Microsoft Edge extension lets a user:
+This Chromium browser extension works in Microsoft Edge, Google Chrome, and Brave. It lets a user:
 
 - create a local account with email and password
 - add websites they want to control
@@ -14,6 +14,22 @@ The login is stored locally in the browser extension storage. It is not connecte
 ## Load in Microsoft Edge
 
 1. Open `edge://extensions`.
+2. Turn on `Developer mode`.
+3. Click `Load unpacked`.
+4. Select this folder: `D:\study-extension`.
+5. Pin or open the `Study Site Timer` extension from the toolbar.
+
+## Load in Google Chrome
+
+1. Open `chrome://extensions`.
+2. Turn on `Developer mode`.
+3. Click `Load unpacked`.
+4. Select this folder: `D:\study-extension`.
+5. Pin or open the `Study Site Timer` extension from the toolbar.
+
+## Load in Brave
+
+1. Open `brave://extensions`.
 2. Turn on `Developer mode`.
 3. Click `Load unpacked`.
 4. Select this folder: `D:\study-extension`.
